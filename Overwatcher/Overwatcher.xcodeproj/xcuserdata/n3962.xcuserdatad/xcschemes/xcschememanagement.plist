@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>Overwatcher.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>9ADAE8A01E08F7DE009F60F0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9ADAE8B91E08F7DF009F60F0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9ADAE8C41E08F7DF009F60F0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

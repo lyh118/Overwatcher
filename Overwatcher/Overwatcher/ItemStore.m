@@ -7,6 +7,13 @@
 //
 
 #import "ItemStore.h"
+#import "AssemblyInfoService.h"
+
+@interface ItemStore ()
+
+@property (nonatomic) NSMutableArray *privateItems;
+
+@end
 
 @implementation ItemStore
 
@@ -17,8 +24,6 @@
         sharedStore = [[self alloc] initPrivate];
     }
     
-    
-    
     return sharedStore;
 }
 
@@ -28,8 +33,32 @@
 
 - (instancetype) initPrivate {
     self = [super init];
+    if(self) {
+        _privateItems = [[NSMutableArray alloc] init];
+    }
     
     return self;
+}
+
+- (NSArray *) allItems {
+    return self.privateItems;
+}
+
+- (NSString *) createItem {
+    NSString *item = @"test";
+    
+    NSLog(@"Created Item");
+    
+    //[AssemblyInfoService getAssemblyList:0];
+    //[AssemblyInfoService getAssemblyListForXml:0];
+    [[[AssemblyInfoService alloc] init] getAssemblyList:0];
+    
+    
+    
+    [self.privateItems addObject:item];
+    
+    return item;
+        
 }
 
 @end

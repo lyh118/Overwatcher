@@ -10,6 +10,9 @@
 
 @interface ItemStore : NSObject
 
+@property (nonatomic, readonly) NSArray *allItems;
+
 + (instancetype) sharedStore;
+- (NSString *) createItem;
 
 @end

@@ -21,6 +21,7 @@
 		9ADAE8E61E1B4334009F60F0 /* MemberTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ADAE8E51E1B4334009F60F0 /* MemberTableViewCell.m */; };
 		9ADAE8EA1E1C7FC1009F60F0 /* AssemblyInfoService.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ADAE8E91E1C7FC1009F60F0 /* AssemblyInfoService.m */; };
 		9ADAE8ED1E1F5C03009F60F0 /* XMLParseUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ADAE8EC1E1F5C03009F60F0 /* XMLParseUtil.m */; };
+		9ADAE8F01E236072009F60F0 /* XMLDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ADAE8EF1E236072009F60F0 /* XMLDictionary.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,8 @@
 		9ADAE8E91E1C7FC1009F60F0 /* AssemblyInfoService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AssemblyInfoService.m; sourceTree = "<group>"; };
 		9ADAE8EB1E1F5C03009F60F0 /* XMLParseUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLParseUtil.h; sourceTree = "<group>"; };
 		9ADAE8EC1E1F5C03009F60F0 /* XMLParseUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLParseUtil.m; sourceTree = "<group>"; };
+		9ADAE8EE1E236072009F60F0 /* XMLDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLDictionary.h; sourceTree = "<group>"; };
+		9ADAE8EF1E236072009F60F0 /* XMLDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLDictionary.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +175,8 @@
 				9ADAE8E91E1C7FC1009F60F0 /* AssemblyInfoService.m */,
 				9ADAE8EB1E1F5C03009F60F0 /* XMLParseUtil.h */,
 				9ADAE8EC1E1F5C03009F60F0 /* XMLParseUtil.m */,
+				9ADAE8EE1E236072009F60F0 /* XMLDictionary.h */,
+				9ADAE8EF1E236072009F60F0 /* XMLDictionary.m */,
 			);
 			name = common;
 			sourceTree = "<group>";
@@ -318,6 +323,7 @@
 				9ADAE8A61E08F7DF009F60F0 /* main.m in Sources */,
 				9ADAE8DF1E08F981009F60F0 /* MainViewController.m in Sources */,
 				9ADAE8E31E0B72F4009F60F0 /* ItemStore.m in Sources */,
+				9ADAE8F01E236072009F60F0 /* XMLDictionary.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

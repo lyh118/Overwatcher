@@ -12,7 +12,9 @@
 
 @property (weak, nonatomic) IBOutlet UIImageView *memberImageView;
 @property (weak, nonatomic) IBOutlet UILabel *nameLabel;
-@property (weak, nonatomic) IBOutlet UILabel *label2;
+
 @property (weak, nonatomic) IBOutlet UILabel *label1;
+@property (weak, nonatomic) IBOutlet UILabel *label2;
+
 
 @end

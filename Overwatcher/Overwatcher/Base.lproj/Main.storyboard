@@ -93,6 +93,7 @@
                                             <outlet property="label2" destination="cR9-i2-4NN" id="H4h-bL-Gsr"/>
                                             <outlet property="memberImageView" destination="C9u-9L-tUK" id="wT3-Ew-vH1"/>
                                             <outlet property="nameLabel" destination="xty-x9-ujI" id="zdk-Im-k4y"/>
+                                            <segue destination="h8f-hA-Sz6" kind="presentation" animates="NO" id="CHL-OA-wOT"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -121,6 +122,33 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="922.39999999999998" y="-556.37181409295351"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="6IZ-fV-MRA">
+            <objects>
+                <viewController id="h8f-hA-Sz6" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xdg-zz-GUz"/>
+                        <viewControllerLayoutGuide type="bottom" id="hdT-WE-cHf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="l22-Ya-Ewb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TpV-39-8aK">
+                                <rect key="frame" x="64" y="271" width="201" height="73"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Ox-F3-J7g" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1791" y="-556"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="1t4-MH-dlW">

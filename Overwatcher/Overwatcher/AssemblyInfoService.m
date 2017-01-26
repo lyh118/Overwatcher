@@ -32,7 +32,7 @@
         }
     }
     
-    NSLog(@"withParam%@", reqUrl);
+    NSLog(@"withParam = %@", reqUrl);
     
     NSURL *url = [NSURL URLWithString:reqUrl];
     

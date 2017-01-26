@@ -152,4 +152,58 @@ static int cnt=0;
     
 }
 
+
+- (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView {
+    //NSLog(@"Will begin dragging");
+}
+
+static int pageNo=1;
+
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
+    //NSLog(@"Did Scroll");
+    
+    NSLog(@"Offset.y = %f",  self.tableView.contentOffset.y);
+    float offset = self.tableView.contentOffset.y;
+    
+    if(offset > 240){
+        pageNo++;
+        NSMutableDictionary *dictionary = [[NSMutableDictionary alloc]init];
+        [dictionary setObject:[@(pageNo) stringValue] forKey:@"pageNo"];
+        
+        [AssemblyInfoService getAssemblyInfoService:@"getMemberCurrStateList" withParam:dictionary withHandler:^(NSData *data, NSError *error) {
+            if(error) {
+                
+            }
+            else {
+                //NSString *text = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+                //NSLog(@"Data = %@", text);
+                
+                NSDictionary *xmlDoc = [NSDictionary dictionaryWithXMLData:data];
+                //NSString *foo = [xmlDoc valueForKeyPath:@"header.resultCode"];
+                //NSLog(@"DataFoo = %@", xmlDoc);
+                //NSLog(@"DataFoo = %@", foo);
+                NSArray *arr = [xmlDoc arrayValueForKeyPath:@"body.items.item"];
+                NSLog(@"DataArr = %@", arr);
+                
+                
+                NSArray *newArray = [self.array arrayByAddingObjectsFromArray:arr];
+                self.array = newArray;
+                
+                //[arr addObjectsFromArray:self.array];
+                
+                NSIndexPath *indexPath = [NSIndexPath indexPathForRow:30 inSection:0];
+                [self.tableView insertRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationTop];
+                
+                //self.array = [NSMutableArray arrayWithArray:arr];
+                
+                //[self.tableView reloadData];
+                //NSIndexPath *indexPath = [NSIndexPath indexPathForRow:10 inSection:0];
+                //[self.tableView insertRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationTop];
+                //cnt=0;
+            }
+        }];
+    }
+    
+}
+
 @end
